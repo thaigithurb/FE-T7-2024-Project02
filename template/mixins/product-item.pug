@@ -1,0 +1,11 @@
+mixin product-item(pet)
+    .product-item
+        a(href="/FE-T7-2024/project02/product-detail.html")
+            .product-item__img
+                img(src=pet.image alt=pet.title)
+            .product-item__content
+                h3.product-item__title #{pet.title}
+                .product-item__info
+                    .product-item__info-item Giống: <b>#{pet.gender}</b>
+                    .product-item__info-item Tuổi: <b>#{pet.age}</b>
+                .product-item__price #{pet.price}
